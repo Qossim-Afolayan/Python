@@ -30,3 +30,19 @@ for word in words:
     else:
         past_tense.append(word + "ed")
 print(past_tense)
+
+rainfall_mi = "1.65, 1.46, 2.05, 3.03, 3.35, 3.46, 2.83, 3.23, 3.5, 2.52, 2.8, 1.85"
+rainfall_mi_list = rainfall_mi.split(",")
+
+num_rainy_months = 0
+for inch in rainfall_mi_list:
+    if float(inch) > 3:
+        num_rainy_months += 1
+
+
+sentence = "students flock to the arb for a variety of outdoor activities such as jogging and picnicking"
+
+same_letter_count = 0
+for word in sentence.split():
+    if word[0] == word[-1]:
+        same_letter_count += 1
