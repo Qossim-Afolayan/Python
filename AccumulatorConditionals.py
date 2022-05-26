@@ -46,3 +46,4 @@ same_letter_count = 0
 for word in sentence.split():
     if word[0] == word[-1]:
         same_letter_count += 1
+
